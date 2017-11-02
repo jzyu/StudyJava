@@ -7,12 +7,15 @@
 // http://sourceforge.net/projects/jboss/ }
 package net.mindview.atunit;
 
+import sun.management.MethodInfo;
+/*
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.bytecode.AnnotationsAttribute;
 import javassist.bytecode.MethodInfo;
 import javassist.bytecode.annotation.Annotation;
+*/
 import net.mindview.util.BinaryFile;
 import net.mindview.util.ProcessFiles;
 
@@ -36,6 +39,7 @@ public class AtUnitRemover implements ProcessFiles.Strategy {
     }
 
     public void process(File cFile) {
+        /*
         boolean modified = false;
         try {
             String cName = ClassNameFinder.thisClass(BinaryFile.read(cFile));
@@ -68,5 +72,6 @@ public class AtUnitRemover implements ProcessFiles.Strategy {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        */
     }
 } // /:~

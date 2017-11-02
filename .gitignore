@@ -24,3 +24,9 @@ hs_err_pid*
 build/
 .gradle/
 .DS_Store
+
+# idea files #
+*.iml
+*.ipr
+*.iws
+local.properties
